@@ -7,15 +7,147 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E16A44062603EB35009449F8 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16A44052603EB35009449F8 /* HealthKit.framework */; };
+		E192221F25F58E8300169101 /* VoiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192221E25F58E8300169101 /* VoiceManager.swift */; };
+		E1A0337B26200DE00046BC45 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A0337926200DE00046BC45 /* Interface.storyboard */; };
+		E1A0337D26200DE10046BC45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A0337C26200DE10046BC45 /* Assets.xcassets */; };
+		E1A0338426200DE20046BC45 /* ParkinsonsApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E1A0338326200DE20046BC45 /* ParkinsonsApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E1A0338926200DE20046BC45 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A0338826200DE20046BC45 /* HostingController.swift */; };
+		E1A0338B26200DE20046BC45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A0338A26200DE20046BC45 /* ContentView.swift */; };
+		E1A0338D26200DE20046BC45 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A0338C26200DE20046BC45 /* ExtensionDelegate.swift */; };
+		E1A0338F26200DE20046BC45 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A0338E26200DE20046BC45 /* NotificationController.swift */; };
+		E1A0339126200DE20046BC45 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A0339026200DE20046BC45 /* NotificationView.swift */; };
+		E1A0339326200DE20046BC45 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A0339226200DE20046BC45 /* ComplicationController.swift */; };
+		E1A0339526200DE20046BC45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A0339426200DE20046BC45 /* Assets.xcassets */; };
+		E1A0339826200DE20046BC45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A0339726200DE20046BC45 /* Preview Assets.xcassets */; };
+		E1A0339D26200DE20046BC45 /* ParkinsonsApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E1A0337726200DE00046BC45 /* ParkinsonsApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E1A033AA262012370046BC45 /* AiAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A033A9262012370046BC45 /* AiAnimationView.swift */; };
+		E1D4480025F2AC650075243B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D447FF25F2AC650075243B /* CardView.swift */; };
+		E1D4480325F2AE9D0075243B /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4480225F2AE9D0075243B /* DataView.swift */; };
 		E1E0175925F191CA00F960D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E0175825F191CA00F960D4 /* AppDelegate.swift */; };
 		E1E0175B25F191CA00F960D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E0175A25F191CA00F960D4 /* SceneDelegate.swift */; };
 		E1E0175D25F191CA00F960D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E0175C25F191CA00F960D4 /* ContentView.swift */; };
 		E1E0175F25F191CA00F960D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E0175E25F191CA00F960D4 /* Assets.xcassets */; };
 		E1E0176225F191CA00F960D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E0176125F191CA00F960D4 /* Preview Assets.xcassets */; };
 		E1E0176525F191CA00F960D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E0176325F191CA00F960D4 /* LaunchScreen.storyboard */; };
+		E1E0176F25F191FF00F960D4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E0176E25F191FF00F960D4 /* LoadingView.swift */; };
+		E1E0178525F1920F00F960D4 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1E0177225F1920F00F960D4 /* Poppins-ExtraLight.ttf */; };
+		E1E0178625F1920F00F960D4 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1E0177325F1920F00F960D4 /* Poppins-ThinItalic.ttf */; };
+		E1E0178725F1920F00F960D4 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1E0177425F1920F00F960D4 /* Poppins-ExtraLightItalic.ttf */; };
+		E1E0178825F1920F00F960D4 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1E0177525F1920F00F960D4 /* Poppins-BoldItalic.ttf */; };
+		E1E0178925F1920F00F960D4 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1E0177625F1920F00F960D4 /* Poppins-Light.ttf */; };
+		E1E0178A25F1920F00F960D4 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1E0177725F1920F00F960D4 /* Poppins-Medium.ttf */; };
+		E1E0178B25F1920F00F960D4 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1E0177825F1920F00F960D4 /* Poppins-SemiBoldItalic.ttf */; };
+		E1E0178C25F1920F00F960D4 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1E0177925F1920F00F960D4 /* Poppins-ExtraBoldItalic.ttf */; };
+		E1E0178D25F1920F00F960D4 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1E0177A25F1920F00F960D4 /* Poppins-ExtraBold.ttf */; };
+		E1E0178E25F1920F00F960D4 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1E0177B25F1920F00F960D4 /* Poppins-BlackItalic.ttf */; };
+		E1E0178F25F1920F00F960D4 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = E1E0177C25F1920F00F960D4 /* OFL.txt */; };
+		E1E0179025F1920F00F960D4 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1E0177D25F1920F00F960D4 /* Poppins-Regular.ttf */; };
+		E1E0179125F1920F00F960D4 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1E0177E25F1920F00F960D4 /* Poppins-LightItalic.ttf */; };
+		E1E0179225F1920F00F960D4 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1E0177F25F1920F00F960D4 /* Poppins-Bold.ttf */; };
+		E1E0179325F1920F00F960D4 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1E0178025F1920F00F960D4 /* Poppins-Black.ttf */; };
+		E1E0179425F1920F00F960D4 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1E0178125F1920F00F960D4 /* Poppins-Thin.ttf */; };
+		E1E0179525F1920F00F960D4 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1E0178225F1920F00F960D4 /* Poppins-SemiBold.ttf */; };
+		E1E0179625F1920F00F960D4 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1E0178325F1920F00F960D4 /* Poppins-Italic.ttf */; };
+		E1E0179725F1920F00F960D4 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1E0178425F1920F00F960D4 /* Poppins-MediumItalic.ttf */; };
+		E1E0179A25F1924000F960D4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E0179925F1924000F960D4 /* HomeView.swift */; };
+		E1E017B125F1927100F960D4 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E0179E25F1927100F960D4 /* BarChartView.swift */; };
+		E1E017B225F1927100F960D4 /* BarChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E0179F25F1927100F960D4 /* BarChartRow.swift */; };
+		E1E017B325F1927100F960D4 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E017A025F1927100F960D4 /* LabelView.swift */; };
+		E1E017B425F1927100F960D4 /* BarChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E017A125F1927100F960D4 /* BarChartCell.swift */; };
+		E1E017B525F1927100F960D4 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E017A225F1927100F960D4 /* Helpers.swift */; };
+		E1E017B625F1927100F960D4 /* PieChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E017A425F1927100F960D4 /* PieChartRow.swift */; };
+		E1E017B725F1927100F960D4 /* PieChartHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E017A525F1927100F960D4 /* PieChartHelpers.swift */; };
+		E1E017B825F1927100F960D4 /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E017A625F1927100F960D4 /* PieChartCell.swift */; };
+		E1E017B925F1927100F960D4 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E017A725F1927100F960D4 /* PieChartView.swift */; };
+		E1E017BA25F1927100F960D4 /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E017A925F1927100F960D4 /* IndicatorPoint.swift */; };
+		E1E017BB25F1927100F960D4 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E017AA25F1927100F960D4 /* LineView.swift */; };
+		E1E017BC25F1927100F960D4 /* Legend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E017AB25F1927100F960D4 /* Legend.swift */; };
+		E1E017BD25F1927100F960D4 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E017AC25F1927100F960D4 /* LineChartView.swift */; };
+		E1E017BE25F1927100F960D4 /* MagnifierRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E017AD25F1927100F960D4 /* MagnifierRect.swift */; };
+		E1E017BF25F1927100F960D4 /* Path+QuadCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E017AE25F1927100F960D4 /* Path+QuadCurve.swift */; };
+		E1E017C025F1927100F960D4 /* MultiLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E017AF25F1927100F960D4 /* MultiLineChartView.swift */; };
+		E1E017C125F1927100F960D4 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E017B025F1927100F960D4 /* Line.swift */; };
+		E1E017C425F192E900F960D4 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E017C325F192E900F960D4 /* Data.swift */; };
+		E1E017C725F1953300F960D4 /* HalfCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E017C625F1953300F960D4 /* HalfCircleView.swift */; };
+		E1E017CA25F197BA00F960D4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E017C925F197BA00F960D4 /* Extensions.swift */; };
+		E1E777FA25F7B94D000A523C /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E777F525F7B94D000A523C /* Poll.swift */; };
+		E1E777FB25F7B94D000A523C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E777F625F7B94D000A523C /* Comment.swift */; };
+		E1E777FC25F7B94D000A523C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E777F725F7B94D000A523C /* User.swift */; };
+		E1E777FD25F7B94D000A523C /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E777F825F7B94D000A523C /* Journal.swift */; };
+		E1E777FE25F7B94D000A523C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E777F925F7B94D000A523C /* Post.swift */; };
+		E1E7780825F7B958000A523C /* PostButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E7780325F7B958000A523C /* PostButtons.swift */; };
+		E1E7780925F7B958000A523C /* PostHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E7780425F7B958000A523C /* PostHeader.swift */; };
+		E1E7780A25F7B958000A523C /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E7780525F7B958000A523C /* PostView.swift */; };
+		E1E7780B25F7B958000A523C /* PollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E7780625F7B958000A523C /* PollView.swift */; };
+		E1E7780C25F7B958000A523C /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E7780725F7B958000A523C /* FeedView.swift */; };
+		E1E7781425F81006000A523C /* ImageExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E7781325F81006000A523C /* ImageExample.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E1A0338526200DE20046BC45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1E0174D25F191CA00F960D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1A0338226200DE20046BC45;
+			remoteInfo = "ParkinsonsApp Extension";
+		};
+		E1A0339B26200DE20046BC45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1E0174D25F191CA00F960D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1A0337626200DE00046BC45;
+			remoteInfo = ParkinsonsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1A0339E26200DE20046BC45 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E1A0339D26200DE20046BC45 /* ParkinsonsApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A033A126200DE20046BC45 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E1A0338426200DE20046BC45 /* ParkinsonsApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E16A44032603EB35009449F8 /* ParkinsonsPredictor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ParkinsonsPredictor.entitlements; sourceTree = "<group>"; };
+		E16A44052603EB35009449F8 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		E192221E25F58E8300169101 /* VoiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceManager.swift; sourceTree = "<group>"; };
+		E1A0337726200DE00046BC45 /* ParkinsonsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkinsonsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A0337A26200DE00046BC45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E1A0337C26200DE10046BC45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1A0337E26200DE10046BC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1A0338326200DE20046BC45 /* ParkinsonsApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ParkinsonsApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A0338826200DE20046BC45 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		E1A0338A26200DE20046BC45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E1A0338C26200DE20046BC45 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E1A0338E26200DE20046BC45 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E1A0339026200DE20046BC45 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		E1A0339226200DE20046BC45 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		E1A0339426200DE20046BC45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1A0339726200DE20046BC45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E1A0339926200DE20046BC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1A0339A26200DE20046BC45 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E1A033A9262012370046BC45 /* AiAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiAnimationView.swift; sourceTree = "<group>"; };
+		E1D447FF25F2AC650075243B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E1D4480225F2AE9D0075243B /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
 		E1E0175525F191CA00F960D4 /* ParkinsonsPredictor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkinsonsPredictor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E0175825F191CA00F960D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1E0175A25F191CA00F960D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,24 +156,145 @@
 		E1E0176125F191CA00F960D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E1E0176425F191CA00F960D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1E0176625F191CA00F960D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1E0176E25F191FF00F960D4 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		E1E0177225F1920F00F960D4 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		E1E0177325F1920F00F960D4 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		E1E0177425F1920F00F960D4 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		E1E0177525F1920F00F960D4 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		E1E0177625F1920F00F960D4 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		E1E0177725F1920F00F960D4 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		E1E0177825F1920F00F960D4 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		E1E0177925F1920F00F960D4 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		E1E0177A25F1920F00F960D4 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		E1E0177B25F1920F00F960D4 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		E1E0177C25F1920F00F960D4 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		E1E0177D25F1920F00F960D4 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		E1E0177E25F1920F00F960D4 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		E1E0177F25F1920F00F960D4 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		E1E0178025F1920F00F960D4 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		E1E0178125F1920F00F960D4 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		E1E0178225F1920F00F960D4 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		E1E0178325F1920F00F960D4 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		E1E0178425F1920F00F960D4 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		E1E0179925F1924000F960D4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E1E0179E25F1927100F960D4 /* BarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		E1E0179F25F1927100F960D4 /* BarChartRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartRow.swift; sourceTree = "<group>"; };
+		E1E017A025F1927100F960D4 /* LabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		E1E017A125F1927100F960D4 /* BarChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartCell.swift; sourceTree = "<group>"; };
+		E1E017A225F1927100F960D4 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		E1E017A425F1927100F960D4 /* PieChartRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartRow.swift; sourceTree = "<group>"; };
+		E1E017A525F1927100F960D4 /* PieChartHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartHelpers.swift; sourceTree = "<group>"; };
+		E1E017A625F1927100F960D4 /* PieChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartCell.swift; sourceTree = "<group>"; };
+		E1E017A725F1927100F960D4 /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		E1E017A925F1927100F960D4 /* IndicatorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorPoint.swift; sourceTree = "<group>"; };
+		E1E017AA25F1927100F960D4 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		E1E017AB25F1927100F960D4 /* Legend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Legend.swift; sourceTree = "<group>"; };
+		E1E017AC25F1927100F960D4 /* LineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		E1E017AD25F1927100F960D4 /* MagnifierRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagnifierRect.swift; sourceTree = "<group>"; };
+		E1E017AE25F1927100F960D4 /* Path+QuadCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Path+QuadCurve.swift"; sourceTree = "<group>"; };
+		E1E017AF25F1927100F960D4 /* MultiLineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiLineChartView.swift; sourceTree = "<group>"; };
+		E1E017B025F1927100F960D4 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		E1E017C325F192E900F960D4 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		E1E017C625F1953300F960D4 /* HalfCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfCircleView.swift; sourceTree = "<group>"; };
+		E1E017C925F197BA00F960D4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E1E777F525F7B94D000A523C /* Poll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poll.swift; sourceTree = "<group>"; };
+		E1E777F625F7B94D000A523C /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		E1E777F725F7B94D000A523C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E1E777F825F7B94D000A523C /* Journal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		E1E777F925F7B94D000A523C /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E1E7780325F7B958000A523C /* PostButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostButtons.swift; sourceTree = "<group>"; };
+		E1E7780425F7B958000A523C /* PostHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostHeader.swift; sourceTree = "<group>"; };
+		E1E7780525F7B958000A523C /* PostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		E1E7780625F7B958000A523C /* PollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollView.swift; sourceTree = "<group>"; };
+		E1E7780725F7B958000A523C /* FeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		E1E7781325F81006000A523C /* ImageExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E1E0175225F191CA00F960D4 /* Frameworks */ = {
+		E1A0338026200DE20046BC45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1E0175225F191CA00F960D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E16A44062603EB35009449F8 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E16A44042603EB35009449F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E16A44052603EB35009449F8 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E192222125F58EAD00169101 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1E0175C25F191CA00F960D4 /* ContentView.swift */,
+				E1A033A9262012370046BC45 /* AiAnimationView.swift */,
+				E1E7780125F7B958000A523C /* Feed */,
+				E1E0176E25F191FF00F960D4 /* LoadingView.swift */,
+				E1D447FF25F2AC650075243B /* CardView.swift */,
+				E1D4480225F2AE9D0075243B /* DataView.swift */,
+				E1E0179925F1924000F960D4 /* HomeView.swift */,
+				E1E017C625F1953300F960D4 /* HalfCircleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E1A0337826200DE00046BC45 /* ParkinsonsApp */ = {
+			isa = PBXGroup;
+			children = (
+				E1A0337926200DE00046BC45 /* Interface.storyboard */,
+				E1A0337C26200DE10046BC45 /* Assets.xcassets */,
+				E1A0337E26200DE10046BC45 /* Info.plist */,
+			);
+			path = ParkinsonsApp;
+			sourceTree = "<group>";
+		};
+		E1A0338726200DE20046BC45 /* ParkinsonsApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E1A0338826200DE20046BC45 /* HostingController.swift */,
+				E1A0338A26200DE20046BC45 /* ContentView.swift */,
+				E1A0338C26200DE20046BC45 /* ExtensionDelegate.swift */,
+				E1A0338E26200DE20046BC45 /* NotificationController.swift */,
+				E1A0339026200DE20046BC45 /* NotificationView.swift */,
+				E1A0339226200DE20046BC45 /* ComplicationController.swift */,
+				E1A0339426200DE20046BC45 /* Assets.xcassets */,
+				E1A0339926200DE20046BC45 /* Info.plist */,
+				E1A0339A26200DE20046BC45 /* PushNotificationPayload.apns */,
+				E1A0339626200DE20046BC45 /* Preview Content */,
+			);
+			path = "ParkinsonsApp Extension";
+			sourceTree = "<group>";
+		};
+		E1A0339626200DE20046BC45 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E1A0339726200DE20046BC45 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		E1E0174C25F191CA00F960D4 = {
 			isa = PBXGroup;
 			children = (
 				E1E0175725F191CA00F960D4 /* ParkinsonsPredictor */,
+				E1A0337826200DE00046BC45 /* ParkinsonsApp */,
+				E1A0338726200DE20046BC45 /* ParkinsonsApp Extension */,
 				E1E0175625F191CA00F960D4 /* Products */,
+				E16A44042603EB35009449F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +302,8 @@
 			isa = PBXGroup;
 			children = (
 				E1E0175525F191CA00F960D4 /* ParkinsonsPredictor.app */,
+				E1A0337726200DE00046BC45 /* ParkinsonsApp.app */,
+				E1A0338326200DE20046BC45 /* ParkinsonsApp Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,9 +311,16 @@
 		E1E0175725F191CA00F960D4 /* ParkinsonsPredictor */ = {
 			isa = PBXGroup;
 			children = (
+				E16A44032603EB35009449F8 /* ParkinsonsPredictor.entitlements */,
 				E1E0175825F191CA00F960D4 /* AppDelegate.swift */,
 				E1E0175A25F191CA00F960D4 /* SceneDelegate.swift */,
-				E1E0175C25F191CA00F960D4 /* ContentView.swift */,
+				E192221E25F58E8300169101 /* VoiceManager.swift */,
+				E1E7781325F81006000A523C /* ImageExample.swift */,
+				E1E777F425F7B94D000A523C /* Data */,
+				E1E017C925F197BA00F960D4 /* Extensions.swift */,
+				E192222125F58EAD00169101 /* Views */,
+				E1E0179C25F1927100F960D4 /* SwiftUICharts */,
+				E1E0177125F1920F00F960D4 /* Poppins */,
 				E1E0175E25F191CA00F960D4 /* Assets.xcassets */,
 				E1E0176325F191CA00F960D4 /* LaunchScreen.storyboard */,
 				E1E0176625F191CA00F960D4 /* Info.plist */,
@@ -75,9 +337,150 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E1E0177125F1920F00F960D4 /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				E1E0177225F1920F00F960D4 /* Poppins-ExtraLight.ttf */,
+				E1E0177325F1920F00F960D4 /* Poppins-ThinItalic.ttf */,
+				E1E0177425F1920F00F960D4 /* Poppins-ExtraLightItalic.ttf */,
+				E1E0177525F1920F00F960D4 /* Poppins-BoldItalic.ttf */,
+				E1E0177625F1920F00F960D4 /* Poppins-Light.ttf */,
+				E1E0177725F1920F00F960D4 /* Poppins-Medium.ttf */,
+				E1E0177825F1920F00F960D4 /* Poppins-SemiBoldItalic.ttf */,
+				E1E0177925F1920F00F960D4 /* Poppins-ExtraBoldItalic.ttf */,
+				E1E0177A25F1920F00F960D4 /* Poppins-ExtraBold.ttf */,
+				E1E0177B25F1920F00F960D4 /* Poppins-BlackItalic.ttf */,
+				E1E0177C25F1920F00F960D4 /* OFL.txt */,
+				E1E0177D25F1920F00F960D4 /* Poppins-Regular.ttf */,
+				E1E0177E25F1920F00F960D4 /* Poppins-LightItalic.ttf */,
+				E1E0177F25F1920F00F960D4 /* Poppins-Bold.ttf */,
+				E1E0178025F1920F00F960D4 /* Poppins-Black.ttf */,
+				E1E0178125F1920F00F960D4 /* Poppins-Thin.ttf */,
+				E1E0178225F1920F00F960D4 /* Poppins-SemiBold.ttf */,
+				E1E0178325F1920F00F960D4 /* Poppins-Italic.ttf */,
+				E1E0178425F1920F00F960D4 /* Poppins-MediumItalic.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		E1E0179C25F1927100F960D4 /* SwiftUICharts */ = {
+			isa = PBXGroup;
+			children = (
+				E1E0179D25F1927100F960D4 /* BarChart */,
+				E1E017A225F1927100F960D4 /* Helpers.swift */,
+				E1E017A325F1927100F960D4 /* PieChart */,
+				E1E017A825F1927100F960D4 /* LineChart */,
+			);
+			path = SwiftUICharts;
+			sourceTree = "<group>";
+		};
+		E1E0179D25F1927100F960D4 /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				E1E0179E25F1927100F960D4 /* BarChartView.swift */,
+				E1E0179F25F1927100F960D4 /* BarChartRow.swift */,
+				E1E017A025F1927100F960D4 /* LabelView.swift */,
+				E1E017A125F1927100F960D4 /* BarChartCell.swift */,
+			);
+			path = BarChart;
+			sourceTree = "<group>";
+		};
+		E1E017A325F1927100F960D4 /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				E1E017A425F1927100F960D4 /* PieChartRow.swift */,
+				E1E017A525F1927100F960D4 /* PieChartHelpers.swift */,
+				E1E017A625F1927100F960D4 /* PieChartCell.swift */,
+				E1E017A725F1927100F960D4 /* PieChartView.swift */,
+			);
+			path = PieChart;
+			sourceTree = "<group>";
+		};
+		E1E017A825F1927100F960D4 /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				E1E017A925F1927100F960D4 /* IndicatorPoint.swift */,
+				E1E017AA25F1927100F960D4 /* LineView.swift */,
+				E1E017AB25F1927100F960D4 /* Legend.swift */,
+				E1E017AC25F1927100F960D4 /* LineChartView.swift */,
+				E1E017AD25F1927100F960D4 /* MagnifierRect.swift */,
+				E1E017AE25F1927100F960D4 /* Path+QuadCurve.swift */,
+				E1E017AF25F1927100F960D4 /* MultiLineChartView.swift */,
+				E1E017B025F1927100F960D4 /* Line.swift */,
+			);
+			path = LineChart;
+			sourceTree = "<group>";
+		};
+		E1E777F425F7B94D000A523C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E1E017C325F192E900F960D4 /* Data.swift */,
+				E1E777F525F7B94D000A523C /* Poll.swift */,
+				E1E777F625F7B94D000A523C /* Comment.swift */,
+				E1E777F725F7B94D000A523C /* User.swift */,
+				E1E777F825F7B94D000A523C /* Journal.swift */,
+				E1E777F925F7B94D000A523C /* Post.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E1E7780125F7B958000A523C /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				E1E7780225F7B958000A523C /* Post */,
+				E1E7780625F7B958000A523C /* PollView.swift */,
+				E1E7780725F7B958000A523C /* FeedView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		E1E7780225F7B958000A523C /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				E1E7780325F7B958000A523C /* PostButtons.swift */,
+				E1E7780425F7B958000A523C /* PostHeader.swift */,
+				E1E7780525F7B958000A523C /* PostView.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E1A0337626200DE00046BC45 /* ParkinsonsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1A033A526200DE20046BC45 /* Build configuration list for PBXNativeTarget "ParkinsonsApp" */;
+			buildPhases = (
+				E1A0337526200DE00046BC45 /* Resources */,
+				E1A033A126200DE20046BC45 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1A0338626200DE20046BC45 /* PBXTargetDependency */,
+			);
+			name = ParkinsonsApp;
+			productName = ParkinsonsApp;
+			productReference = E1A0337726200DE00046BC45 /* ParkinsonsApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E1A0338226200DE20046BC45 /* ParkinsonsApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1A033A426200DE20046BC45 /* Build configuration list for PBXNativeTarget "ParkinsonsApp Extension" */;
+			buildPhases = (
+				E1A0337F26200DE20046BC45 /* Sources */,
+				E1A0338026200DE20046BC45 /* Frameworks */,
+				E1A0338126200DE20046BC45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ParkinsonsApp Extension";
+			productName = "ParkinsonsApp Extension";
+			productReference = E1A0338326200DE20046BC45 /* ParkinsonsApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		E1E0175425F191CA00F960D4 /* ParkinsonsPredictor */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1E0176925F191CA00F960D4 /* Build configuration list for PBXNativeTarget "ParkinsonsPredictor" */;
@@ -85,10 +488,12 @@
 				E1E0175125F191CA00F960D4 /* Sources */,
 				E1E0175225F191CA00F960D4 /* Frameworks */,
 				E1E0175325F191CA00F960D4 /* Resources */,
+				E1A0339E26200DE20046BC45 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E1A0339C26200DE20046BC45 /* PBXTargetDependency */,
 			);
 			name = ParkinsonsPredictor;
 			productName = ParkinsonsPredictor;
@@ -104,6 +509,12 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					E1A0337626200DE00046BC45 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					E1A0338226200DE20046BC45 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					E1E0175425F191CA00F960D4 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -123,16 +534,55 @@
 			projectRoot = "";
 			targets = (
 				E1E0175425F191CA00F960D4 /* ParkinsonsPredictor */,
+				E1A0337626200DE00046BC45 /* ParkinsonsApp */,
+				E1A0338226200DE20046BC45 /* ParkinsonsApp Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E1A0337526200DE00046BC45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A0337D26200DE10046BC45 /* Assets.xcassets in Resources */,
+				E1A0337B26200DE00046BC45 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A0338126200DE20046BC45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A0339826200DE20046BC45 /* Preview Assets.xcassets in Resources */,
+				E1A0339526200DE20046BC45 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1E0175325F191CA00F960D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E0179425F1920F00F960D4 /* Poppins-Thin.ttf in Resources */,
+				E1E0179725F1920F00F960D4 /* Poppins-MediumItalic.ttf in Resources */,
+				E1E0178F25F1920F00F960D4 /* OFL.txt in Resources */,
+				E1E0178725F1920F00F960D4 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				E1E0178E25F1920F00F960D4 /* Poppins-BlackItalic.ttf in Resources */,
+				E1E0178525F1920F00F960D4 /* Poppins-ExtraLight.ttf in Resources */,
+				E1E0179525F1920F00F960D4 /* Poppins-SemiBold.ttf in Resources */,
+				E1E0178825F1920F00F960D4 /* Poppins-BoldItalic.ttf in Resources */,
+				E1E0178925F1920F00F960D4 /* Poppins-Light.ttf in Resources */,
+				E1E0179325F1920F00F960D4 /* Poppins-Black.ttf in Resources */,
+				E1E0179625F1920F00F960D4 /* Poppins-Italic.ttf in Resources */,
+				E1E0178D25F1920F00F960D4 /* Poppins-ExtraBold.ttf in Resources */,
+				E1E0179125F1920F00F960D4 /* Poppins-LightItalic.ttf in Resources */,
 				E1E0176525F191CA00F960D4 /* LaunchScreen.storyboard in Resources */,
+				E1E0178B25F1920F00F960D4 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				E1E0179025F1920F00F960D4 /* Poppins-Regular.ttf in Resources */,
+				E1E0178C25F1920F00F960D4 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				E1E0179225F1920F00F960D4 /* Poppins-Bold.ttf in Resources */,
+				E1E0178625F1920F00F960D4 /* Poppins-ThinItalic.ttf in Resources */,
+				E1E0178A25F1920F00F960D4 /* Poppins-Medium.ttf in Resources */,
 				E1E0176225F191CA00F960D4 /* Preview Assets.xcassets in Resources */,
 				E1E0175F25F191CA00F960D4 /* Assets.xcassets in Resources */,
 			);
@@ -141,19 +591,90 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E1A0337F26200DE20046BC45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A0338B26200DE20046BC45 /* ContentView.swift in Sources */,
+				E1A0338926200DE20046BC45 /* HostingController.swift in Sources */,
+				E1A0338F26200DE20046BC45 /* NotificationController.swift in Sources */,
+				E1A0338D26200DE20046BC45 /* ExtensionDelegate.swift in Sources */,
+				E1A0339126200DE20046BC45 /* NotificationView.swift in Sources */,
+				E1A0339326200DE20046BC45 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1E0175125F191CA00F960D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E017B925F1927100F960D4 /* PieChartView.swift in Sources */,
 				E1E0175925F191CA00F960D4 /* AppDelegate.swift in Sources */,
+				E1E0176F25F191FF00F960D4 /* LoadingView.swift in Sources */,
+				E1E777FC25F7B94D000A523C /* User.swift in Sources */,
 				E1E0175B25F191CA00F960D4 /* SceneDelegate.swift in Sources */,
+				E1E017BC25F1927100F960D4 /* Legend.swift in Sources */,
+				E1E017BD25F1927100F960D4 /* LineChartView.swift in Sources */,
+				E192221F25F58E8300169101 /* VoiceManager.swift in Sources */,
+				E1E7780A25F7B958000A523C /* PostView.swift in Sources */,
+				E1E7780C25F7B958000A523C /* FeedView.swift in Sources */,
+				E1E017B725F1927100F960D4 /* PieChartHelpers.swift in Sources */,
+				E1E017B525F1927100F960D4 /* Helpers.swift in Sources */,
+				E1E777FA25F7B94D000A523C /* Poll.swift in Sources */,
+				E1E0179A25F1924000F960D4 /* HomeView.swift in Sources */,
+				E1E017C125F1927100F960D4 /* Line.swift in Sources */,
+				E1E7780B25F7B958000A523C /* PollView.swift in Sources */,
+				E1E7780925F7B958000A523C /* PostHeader.swift in Sources */,
+				E1E017B425F1927100F960D4 /* BarChartCell.swift in Sources */,
+				E1D4480325F2AE9D0075243B /* DataView.swift in Sources */,
+				E1E017C025F1927100F960D4 /* MultiLineChartView.swift in Sources */,
+				E1E017B825F1927100F960D4 /* PieChartCell.swift in Sources */,
+				E1E017C425F192E900F960D4 /* Data.swift in Sources */,
+				E1E7781425F81006000A523C /* ImageExample.swift in Sources */,
+				E1E017BE25F1927100F960D4 /* MagnifierRect.swift in Sources */,
+				E1E017B625F1927100F960D4 /* PieChartRow.swift in Sources */,
+				E1E777FE25F7B94D000A523C /* Post.swift in Sources */,
 				E1E0175D25F191CA00F960D4 /* ContentView.swift in Sources */,
+				E1E017B325F1927100F960D4 /* LabelView.swift in Sources */,
+				E1E017BF25F1927100F960D4 /* Path+QuadCurve.swift in Sources */,
+				E1E017BB25F1927100F960D4 /* LineView.swift in Sources */,
+				E1D4480025F2AC650075243B /* CardView.swift in Sources */,
+				E1E777FB25F7B94D000A523C /* Comment.swift in Sources */,
+				E1E017CA25F197BA00F960D4 /* Extensions.swift in Sources */,
+				E1E017B225F1927100F960D4 /* BarChartRow.swift in Sources */,
+				E1E777FD25F7B94D000A523C /* Journal.swift in Sources */,
+				E1E017B125F1927100F960D4 /* BarChartView.swift in Sources */,
+				E1E017BA25F1927100F960D4 /* IndicatorPoint.swift in Sources */,
+				E1A033AA262012370046BC45 /* AiAnimationView.swift in Sources */,
+				E1E7780825F7B958000A523C /* PostButtons.swift in Sources */,
+				E1E017C725F1953300F960D4 /* HalfCircleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E1A0338626200DE20046BC45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1A0338226200DE20046BC45 /* ParkinsonsApp Extension */;
+			targetProxy = E1A0338526200DE20046BC45 /* PBXContainerItemProxy */;
+		};
+		E1A0339C26200DE20046BC45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1A0337626200DE00046BC45 /* ParkinsonsApp */;
+			targetProxy = E1A0339B26200DE20046BC45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		E1A0337926200DE00046BC45 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1A0337A26200DE00046BC45 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		E1E0176325F191CA00F960D4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -165,6 +686,94 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E1A0339F26200DE20046BC45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MC27HKM86M;
+				IBSC_MODULE = ParkinsonsApp_Extension;
+				INFOPLIST_FILE = ParkinsonsApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ai.Parkinsonsapp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		E1A033A026200DE20046BC45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MC27HKM86M;
+				IBSC_MODULE = ParkinsonsApp_Extension;
+				INFOPLIST_FILE = ParkinsonsApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ai.Parkinsonsapp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		E1A033A226200DE20046BC45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ParkinsonsApp Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = MC27HKM86M;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "ParkinsonsApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ai.Parkinsonsapp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		E1A033A326200DE20046BC45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ParkinsonsApp Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = MC27HKM86M;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "ParkinsonsApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ai.Parkinsonsapp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
 		E1E0176725F191CA00F960D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -286,6 +895,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ParkinsonsPredictor/ParkinsonsPredictor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ParkinsonsPredictor/Preview Content\"";
 				DEVELOPMENT_TEAM = MC27HKM86M;
@@ -295,7 +905,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Ai.ParkinsonsPredictor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ai.Parkinsonsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,6 +917,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ParkinsonsPredictor/ParkinsonsPredictor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ParkinsonsPredictor/Preview Content\"";
 				DEVELOPMENT_TEAM = MC27HKM86M;
@@ -316,7 +927,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Ai.ParkinsonsPredictor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ai.Parkinsonsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -326,6 +937,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E1A033A426200DE20046BC45 /* Build configuration list for PBXNativeTarget "ParkinsonsApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A033A226200DE20046BC45 /* Debug */,
+				E1A033A326200DE20046BC45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1A033A526200DE20046BC45 /* Build configuration list for PBXNativeTarget "ParkinsonsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A0339F26200DE20046BC45 /* Debug */,
+				E1A033A026200DE20046BC45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E1E0175025F191CA00F960D4 /* Build configuration list for PBXProject "ParkinsonsPredictor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
