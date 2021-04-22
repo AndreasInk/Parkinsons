@@ -51,20 +51,6 @@ struct ContentView: View {
         }
 
         // Get the last batch of dyskinetic symptom results.
-        movementDisorderManager.queryDyskineticSymptom(from: startDate, to: endDate) { (dyskineticSymptomResults, error) in
-            
-            // Check for errors.
-            if let error = error {
-                // Handle the error here.
-                print("*** An error occurred: \(error.localizedDescription) ***")
-                return
-            }
-            
-            // Do something with the dyskinetic symptom results here.
-            print(dyskineticSymptomResults)
-        }
-
-        startDate = endDate
     }
 }
 

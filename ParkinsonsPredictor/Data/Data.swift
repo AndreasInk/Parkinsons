@@ -23,7 +23,13 @@ struct Tremor: Identifiable, Codable, Hashable{
     
     
 }
-
+struct Balance: Identifiable, Codable, Hashable{
+    var id: String
+    var value: Double
+    var date: Date
+    
+    
+}
 struct WalkingSpeed: Identifiable, Codable, Hashable{
     var id: String
     var speed: Double
@@ -62,6 +68,7 @@ struct Day: Identifiable, Codable, Hashable{
     var id: String
     var score: [Score]
     var tremor: [Tremor]
+    var balance: [Balance]
     var walkingSpeed: [WalkingSpeed]
     var strideLength: [Stride]
     var aysm: [Asymmetry]

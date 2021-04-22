@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>NSMotionUsageDescription</key>
-	<string>In addition, this app would like to access your tremor and dyskinetic symptom data. This is only intended for use in those already diagnosed with Parkinson’s disease.</string>
+	<string>This app is monitoring and collecting your Parkinsonian resting tremor data, only if you self-report or have been clinically diagnosed with resting tremor, and indicate within the app that this is true.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>

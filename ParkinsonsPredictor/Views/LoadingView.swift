@@ -38,6 +38,7 @@ struct LoadingView: View {
                 }
                 if animate2 {
             Text("Parkinson's Health Tool")
+                .multilineTextAlignment(.center)
                 .font(.custom("Poppins-Bold", size: 32, relativeTo: .headline))
                 .foregroundColor(.white)
                 .padding()

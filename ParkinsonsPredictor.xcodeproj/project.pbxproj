@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1005F06263107BC00B687D0 /* ParkinsonsScore.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E1005F05263107BC00B687D0 /* ParkinsonsScore.mlmodel */; };
+		E1005F0C2631098200B687D0 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1005F0B2631098200B687D0 /* HealthKit.framework */; };
 		E16A44062603EB35009449F8 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16A44052603EB35009449F8 /* HealthKit.framework */; };
 		E192221F25F58E8300169101 /* VoiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192221E25F58E8300169101 /* VoiceManager.swift */; };
 		E1A0337B26200DE00046BC45 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A0337926200DE00046BC45 /* Interface.storyboard */; };
@@ -127,6 +129,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E1005F05263107BC00B687D0 /* ParkinsonsScore.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ParkinsonsScore.mlmodel; path = ../../../../Downloads/ParkinsonsScore.mlmodel; sourceTree = "<group>"; };
+		E1005F0A2631098200B687D0 /* ParkinsonsApp Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ParkinsonsApp Extension.entitlements"; sourceTree = "<group>"; };
+		E1005F0B2631098200B687D0 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		E16A44032603EB35009449F8 /* ParkinsonsPredictor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ParkinsonsPredictor.entitlements; sourceTree = "<group>"; };
 		E16A44052603EB35009449F8 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		E192221E25F58E8300169101 /* VoiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceManager.swift; sourceTree = "<group>"; };
@@ -215,6 +220,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1005F0C2631098200B687D0 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +238,7 @@
 		E16A44042603EB35009449F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E1005F0B2631098200B687D0 /* HealthKit.framework */,
 				E16A44052603EB35009449F8 /* HealthKit.framework */,
 			);
 			name = Frameworks;
@@ -247,6 +254,7 @@
 				E1D447FF25F2AC650075243B /* CardView.swift */,
 				E1D4480225F2AE9D0075243B /* DataView.swift */,
 				E1E0179925F1924000F960D4 /* HomeView.swift */,
+				E1005F05263107BC00B687D0 /* ParkinsonsScore.mlmodel */,
 				E1E017C625F1953300F960D4 /* HalfCircleView.swift */,
 			);
 			path = Views;
@@ -265,6 +273,7 @@
 		E1A0338726200DE20046BC45 /* ParkinsonsApp Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E1005F0A2631098200B687D0 /* ParkinsonsApp Extension.entitlements */,
 				E1A0338826200DE20046BC45 /* HostingController.swift */,
 				E1A0338A26200DE20046BC45 /* ContentView.swift */,
 				E1A0338C26200DE20046BC45 /* ExtensionDelegate.swift */,
@@ -608,6 +617,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1005F06263107BC00B687D0 /* ParkinsonsScore.mlmodel in Sources */,
 				E1E017B925F1927100F960D4 /* PieChartView.swift in Sources */,
 				E1E0175925F191CA00F960D4 /* AppDelegate.swift in Sources */,
 				E1E0176F25F191FF00F960D4 /* LoadingView.swift in Sources */,
@@ -730,6 +740,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "ParkinsonsApp Extension/ParkinsonsApp Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ParkinsonsApp Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = MC27HKM86M;
@@ -754,6 +765,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "ParkinsonsApp Extension/ParkinsonsApp Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ParkinsonsApp Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = MC27HKM86M;
